@@ -1,0 +1,39 @@
+{
+  "name": "widgento/magento2-store-pickup",
+  "description": "Magento2 Store Pickup",
+  "license": "MIT",
+  "type": "magento2-module",
+  "homepage": "https://www.widgento.com/",
+  "keywords":[ "composer-installer", "magento", "Magento 2 Module", "Magento 2", "Widgento"],
+  "authors": [
+    {
+      "email": "info@widgento.com",
+      "name": "Yury Ksenevich"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.2.19",
+    "magento/framework": "^102.0",
+    "magento/module-backend": "^101.0",
+    "myclabs/php-enum": "dev-master",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "fzaninotto/faker": "^1.6"
+  },
+  "repositories": {
+    "magento": {
+      "type": "composer",
+      "url": "https://repo.magento.com/"
+    }
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Widgento\\StorePickup\\": ""
+    }
+  }
+}
