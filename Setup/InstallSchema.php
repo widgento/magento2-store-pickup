@@ -65,6 +65,12 @@ class InstallSchema implements InstallSchemaInterface
                 null,
                 ['nullable' => true]
             )
+            ->addColumn(
+                StoreLocationInterface::IS_ENABLED,
+                Table::TYPE_BOOLEAN,
+                null,
+                ['nullable' => false, 'default' => true]
+            )
         ;
 
         $setup->getConnection()->createTable($storeLocationTable);

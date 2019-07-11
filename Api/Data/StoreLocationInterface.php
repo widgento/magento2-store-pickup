@@ -11,6 +11,7 @@ interface StoreLocationInterface
     const ADDRESS = 'address';
     const PHONE_NUMBERS = 'phone_numbers';
     const OPENING_HOURS = 'opening_hours';
+    const IS_ENABLED = 'is_enabled';
 
     const ATTRIBUTES = [
         self::NAME,
@@ -18,6 +19,7 @@ interface StoreLocationInterface
         self::ADDRESS,
         self::PHONE_NUMBERS,
         self::OPENING_HOURS,
+        self::IS_ENABLED,
     ];
 
     public function setId($id);
@@ -35,6 +37,10 @@ interface StoreLocationInterface
     public function setAddress(string $address): StoreLocationInterface;
 
     public function getAddress(): string;
+
+    public function setIsEnabled(bool $isEnabled): StoreLocationInterface;
+
+    public function getIsEnabled(): bool;
 
     /**
      * @param string[] $phoneNumbers

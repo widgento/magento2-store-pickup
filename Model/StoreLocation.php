@@ -85,4 +85,14 @@ class StoreLocation extends AbstractModel implements StoreLocationInterface
             $savedData ? json_decode($savedData, true) : []
         );
     }
+
+    public function setIsEnabled(bool $isEnabled): StoreLocationInterface
+    {
+        return $this->setData(self::IS_ENABLED, $isEnabled);
+    }
+
+    public function getIsEnabled(): bool
+    {
+        return (bool) $this->_getData(self::IS_ENABLED);
+    }
 }

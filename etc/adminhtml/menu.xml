@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Widgento_StorePickup::store_location"
+             title="Store Locations"
+             translate="title"
+             module="Widgento_StorePickup"
+             sortOrder="100"
+             parent="Magento_InventoryAdminUi::inventory"
+             action="widgento_storepickup/storeLocation"
+             resource="Widgento_StorePickup::store_location"/>
+    </menu>
+</config>

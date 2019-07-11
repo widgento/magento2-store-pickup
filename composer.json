@@ -16,8 +16,9 @@
     "php": ">=7.2.19",
     "magento/framework": "^102.0",
     "magento/module-backend": "^101.0",
-    "myclabs/php-enum": "dev-master",
-    "ext-json": "*"
+    "ext-json": "*",
+    "magento/module-inventory-api": "^1.0",
+    "magento/module-ui": "^101.1"
   },
   "require-dev": {
     "fzaninotto/faker": "^1.6"
